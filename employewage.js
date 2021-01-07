@@ -63,6 +63,9 @@ function calculateWagesForCondition(){
         empWage=empHrs*wagePerHr;
         totalEmpWage+=empWage;
         console.log("employe wage is ",empWage)
+        console.log("total employee wage is ",totalEmpWage)
+        var wageArray=[empWage,totalEmpWage]
+        console.log(wageArray)
     }
     
     
