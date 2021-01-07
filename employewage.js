@@ -33,10 +33,38 @@ function calculateDailyWage() {
     }    
 }
 calculateDailyWage();
+let workingDaysPerMonth=20;
 
 function calculateMonthlyWage(){
-    let workingDaysPerMonth=20;
     let monthlyWage=workingDaysPerMonth*daily;
     console.log(" monthly wageis "+monthlyWage)
 }
 calculateMonthlyWage();
+let maxHrs=100;
+let totalWorkingDays=0;
+let empWage=0;
+let empHrs=0
+let totalEmpWage=0;
+let totalEmpHrs=0;
+function calculateWagesForCondition(){
+    while( totalEmpHrs<=maxHrs && totalWorkingDays<workingDaysPerMonth) {
+        totalWorkingDays++;
+        let empCheck=Math.round(Math.random());
+        switch(empCheck) {
+        case fullTime:
+            empHrs=8;
+        break;
+        case partTime:
+            empHrs=4;
+        break;
+        default:
+            empHrs=0;
+        }
+        empWage=empHrs*wagePerHr;
+        totalEmpWage+=empWage;
+        console.log("employe wage is ",empWage)
+    }
+    
+    
+}
+calculateWagesForCondition();
