@@ -11,6 +11,7 @@ checkAttandance();
 function calculateDailyWage() {
     let wagePerHr=20;
     let fullDay=8;
+    let halfDay=4
    let dailywage=wagePerHr*fullDay;
    console.log(dailywage);
 }
