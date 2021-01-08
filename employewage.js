@@ -1,5 +1,5 @@
 console.log("welcome to employee wage computation");
-function checkAttandance() {
+checkAttandance=()=> {
     let random=Math.round(Math.random());
     if(random=1){
         console.log("Employe is present")
@@ -14,7 +14,7 @@ let halfDay=4
 let daily=0;
 const fullTime=1
 const partTime=0
-function calculateDailyWage() {
+calculateDailyWage=()=> {
    
     let random=Math.round(Math.random());
     switch(random){
@@ -35,7 +35,7 @@ function calculateDailyWage() {
 calculateDailyWage();
 let workingDaysPerMonth=20;
 
-function calculateMonthlyWage(){
+calculateMonthlyWage=()=>{
     let monthlyWage=workingDaysPerMonth*daily;
     console.log(" monthly wageis "+monthlyWage)
 }
@@ -46,7 +46,7 @@ let empWage=0;
 let empHrs=0
 let totalEmpWage=0;
 let totalEmpHrs=0;
-function calculateWagesForCondition(){
+calculateWagesForCondition=()=>{
     while( totalEmpHrs<=maxHrs && totalWorkingDays<workingDaysPerMonth) {
         totalWorkingDays++;
         let empCheck=Math.round(Math.random());
@@ -66,8 +66,6 @@ function calculateWagesForCondition(){
         console.log("total employee wage is ",totalEmpWage)
         var wageArray=[empWage,totalEmpWage,totalWorkingDays]
         console.log(wageArray)
-    }
-    
-    
+    }  
 }
 calculateWagesForCondition();
